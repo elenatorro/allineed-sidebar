@@ -1,0 +1,88 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Variables
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$sidebar-expanded-width: 250px;
+$sidebar-collapsed-width: 50px;
+
+$sidebar-transition-width-duration: 0.5s;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Sidebar
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.sidebar {
+ background-color: $colors-success-background;
+ color: $colors-primary;
+ height: 100%;
+ left: 0;
+ overflow: hidden;
+ padding: 0;
+ position: fixed;
+ top: 0;
+ transition: width $sidebar-transition-width-duration;
+ width: $sidebar-expanded-width;
+ color: $colors-white;
+
+ .sidebar-container {
+  height: 100%;
+ }
+
+ &.sidebar-collapsed {
+  width: $sidebar-collapsed-width;
+ }
+
+ .navbar-link {
+  color: $colors-white !important;
+  width: 100%;
+ }
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-left: 0;
+  left: $sidebar-expanded-width;
+  right: 0;
+}
+
+.wrapper-expanded {
+   left: $sidebar-collapsed-width;
+}
+
+.sidebar-collapsed {
+ width: $sidebar-collapsed-width;
+}
+
+.sidebar-item {
+ width: 100%;
+ display: block;
+ margin: 0;
+}
+
+.sidebar-footer {
+ width: 100%;
+ display: block;
+ bottom: 0;
+ left: 0;
+ position: absolute;
+ padding: $base-padding-size;
+}
+
+.sidebar-toggle {
+ &.sidebar-toggle-expanded {
+
+ }
+
+ &.sidebar-toggle-collapse {
+
+ }
+}
+
+@media (min-width: $base-media-phone-min) {
+ .wrapper {
+  left: 0;
+  padding-left: $sidebar-expanded-width;
+ }
+}

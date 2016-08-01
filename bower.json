@@ -1,0 +1,25 @@
+{
+  "name": "allineed-sidebar",
+  "authors": [
+    "Elena Torro <elenatorro@gmail.com>"
+  ],
+  "description": "Sidebar module for All I Need CSS framework (allineed)",
+  "main": "_sidebar.scss",
+  "keywords": [
+    "css",
+    "framework",
+    "allineed",
+    "sidebar",
+    "scss",
+    "sass"
+  ],
+  "license": "MIT",
+  "homepage": "http://elenatorro.github.io/allineed",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
