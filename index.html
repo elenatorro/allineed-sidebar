@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All I Need CSS</title>
-  <link rel="stylesheet" href="https://elenatorro.github.io/allineed/dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="https://elenatorro.github.io/allineed/dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8"> -->
+  <link rel="stylesheet" href="../../../../dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8">
+
 </head>
 
 <body>
 
   <!--  Sidebar  -->
-  <section class="sidebar">
+  <section id="main-sidebar" class="sidebar">
 
     <!--  Sidebar Items -->
     <nav>
@@ -34,9 +36,10 @@
 
   </section>
 
+  <a class="sidebar-toggle button-link" id="sidebar-toggle"></a>
 
   <!--  Wrapper -->
-  <section class="container wrapper">
+  <section id="main-wrapper" class="container wrapper">
 
     <!--  Header -->
     <header>
@@ -47,12 +50,13 @@
         <h3>Sidebar Module</h3>
 
         <section class="u-centered">
-          <a type="button" name="button" class="button button-warning" href="https://github.com/elenatorro/allineed">Github</a>
+          <a type="button" name="button" class="button button-warning" href="https://github.com/elenatorro/allineed-sidebar">Github</a>
           <a type="button" name="button" class="button button-success" href="https://paypal.me/elenatorro">Donate</a>
         </section>
       </section>
 
     </header>
+    <!--  / Header -->
 
     <section class="container-section">
       <section class="row">
@@ -87,13 +91,11 @@
         </section>
       </section>
     </section>
-
   </section>
+  <!--  / Wrapper -->
   </section>
 
+  <script type="text/javascript" src="sidebar.js"></script>
 </body>
-
-</html>
-
 
 </html>
