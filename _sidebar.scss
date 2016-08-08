@@ -12,6 +12,11 @@ $wrapper-media-padding:   20px;
 
 $sidebar-transition-width-duration: 0.2s;
 
+$sidebar-background-color: $colors-success-background;
+$sidebar-color: $colors-primary;
+
+$sidebar-item-active-background-color: darken($sidebar-background-color, 20%);
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Sidebar
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,8 +28,8 @@ $sidebar-transition-width-duration: 0.2s;
  left: 0;
  top: 0;
 
- background-color: $colors-success-background;
- color: $colors-primary;
+ background-color: $sidebar-background-color;
+ color: $sidebar-color;
 
  padding: 0;
  position: fixed;
@@ -107,6 +112,10 @@ $sidebar-transition-width-duration: 0.2s;
  display: block;
  margin: 0;
  transition: margin-right $sidebar-transition-width-duration;
+
+ &.sidebar-item-active {
+
+ }
 }
 
 .sidebar-footer {
