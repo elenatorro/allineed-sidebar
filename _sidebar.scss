@@ -114,7 +114,7 @@ $sidebar-item-active-background-color: darken($sidebar-background-color, 20%);
  transition: margin-right $sidebar-transition-width-duration;
 
  &.sidebar-item-active {
-
+  background-color: $sidebar-item-active-background-color;
  }
 }
 
