@@ -1,6 +1,6 @@
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Variables
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 $sidebar-expanded-width:  250px;
 $sidebar-collapsed-width: 0;
@@ -17,9 +17,9 @@ $sidebar-color: $colors-primary;
 
 $sidebar-item-active-background-color: darken($sidebar-background-color, 20%);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Sidebar
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 .sidebar {
  width: $sidebar-expanded-width;
@@ -84,12 +84,11 @@ $sidebar-item-active-background-color: darken($sidebar-background-color, 20%);
 
 .wrapper {
   height: 100%;
-  width: 100%;
+  width: inherit;
 
-  left: $sidebar-expanded-width;
-  right: 0;
   top: $wrapper-media-padding;
-
+  right: 0;
+  left: $sidebar-expanded-width;
   position: absolute;
   transition: left $sidebar-transition-width-duration;
 }
