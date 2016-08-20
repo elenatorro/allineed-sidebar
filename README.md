@@ -1,8 +1,10 @@
-# All I Need
+# All I Need - Sidebar
 
 ## Simple and minimalist CSS framework
 
 ### Sidebar Module
+
+This module does not need the entire framework to work.
 
 You can see this module in action in this [Demo](https://elenatorro.github.io/allineed-sidebar/)
 

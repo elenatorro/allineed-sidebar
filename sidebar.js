@@ -1,13 +1,13 @@
 'use strict';
 
 var
-  SIDEBAR_COLLAPSED_CLASS        = 'sidebar-collapsed',
-  SIDEBAR_ID                     = 'main-sidebar',
-  SIDEBAR_TOGGLE_CLASS           = 'sidebar-toggle',
-  SIDEBAR_TOGGLE_COLLAPSED_CLASS = 'sidebar-toggle-collapsed',
-  SIDEBAR_TOGGLE_ID              = 'sidebar-toggle',
-  WRAPPER_CONTAINER_ID           = 'main-wrapper',
-  WRAPPER_EXPANDED_CLASS         = 'wrapper-expanded';
+  SIDEBAR_COLLAPSED_CLASS        = 'ain-sidebar-collapsed',
+  SIDEBAR_ID                     = 'ain-main-sidebar',
+  SIDEBAR_TOGGLE_CLASS           = 'ain-sidebar-toggle',
+  SIDEBAR_TOGGLE_COLLAPSED_CLASS = 'ain-sidebar-toggle-collapsed',
+  SIDEBAR_TOGGLE_ID              = 'ain-sidebar-toggle',
+  WRAPPER_CONTAINER_ID           = 'ain-main-wrapper',
+  WRAPPER_EXPANDED_CLASS         = 'ain-wrapper-expanded';
 
 var toggle, sidebar, wrapper, toggleSidebar;
 

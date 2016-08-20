@@ -1,140 +1,126 @@
-
-// Variables
-
-
-$sidebar-expanded-width:  250px;
-$sidebar-collapsed-width: 0;
-
-$sidebar-toggle-margin:   10px;
-$sidebar-toggle-size:     1.5em;
-
-$wrapper-media-padding:   20px;
-
-$sidebar-transition-width-duration: 0.2s;
-
-$sidebar-background-color: $colors-success-background;
-$sidebar-color: $colors-primary;
-
-$sidebar-item-active-background-color: darken($sidebar-background-color, 20%);
-
-
 // Sidebar
 
+.ain-sidebar {
+    width: $ain-sidebar-expanded-width;
+    height: 100%;
 
-.sidebar {
- width: $sidebar-expanded-width;
- height: 100%;
+    left: 0;
+    top: 0;
 
- left: 0;
- top: 0;
+    background-color: $ain-sidebar-background-color;
+    color: $ain-sidebar-color;
 
- background-color: $sidebar-background-color;
- color: $sidebar-color;
+    padding: 0;
+    position: fixed;
 
- padding: 0;
- position: fixed;
+    overflow: hidden;
 
- overflow: hidden;
+    transition: width $ain-sidebar-transition-width-duration;
 
- transition: width $sidebar-transition-width-duration;
+    z-index: 100000;
 
- z-index: $base-z-index-2;
+    .ain-sidebar-container {
+        height: 100%;
+    }
 
- .sidebar-container {
-  height: 100%;
- }
+    &.ain-sidebar-collapsed {
+        width: $ain-sidebar-collapsed-width;
+    }
 
- &.sidebar-collapsed {
-  width: $sidebar-collapsed-width;
- }
+    .ain-navbar-link {
+        width: 100%;
 
- .navbar-link {
-  width: 100%;
-
-  color: $colors-white !important;
- }
+        color: #FFFFFF !important;
+    }
 }
 
-.sidebar-toggle-button {
-   @extend .icon;
+.ain-sidebar-toggle-button {
+    top: $ain-sidebar-toggle-margin;
 
-   top: $sidebar-toggle-margin;
+    color: black;
+    position: fixed;
+    display: inline-block;
 
-   position: fixed;
-   display: inline-block;
+    font-size: $ain-sidebar-toggle-size;
 
-   font-size: $sidebar-toggle-size;
-
-   transition: left $sidebar-transition-width-duration;
-   z-index: $base-z-index-2;
+    transition: left $ain-sidebar-transition-width-duration;
+    z-index: 12000;
 }
 
-.sidebar-toggle {
-  @extend .sidebar-toggle-button;
-  @extend .icon-circle-left;
+.ain-sidebar-toggle {
+    @extend .ain-sidebar-toggle-button;
+    left: $ain-sidebar-expanded-width + $ain-sidebar-toggle-margin;
 
-  left: $sidebar-expanded-width + $sidebar-toggle-margin;
+    &:after {
+      content: "\2190"; //arrow left
+    }
 }
 
-.sidebar-toggle-collapsed {
-  @extend .sidebar-toggle-button;
-  @extend .icon-circle-right;
-  left: $sidebar-toggle-margin;
+.ain-sidebar-toggle-collapsed {
+    @extend .ain-sidebar-toggle-button;
+
+    &:after {
+      content: "\2192";//arrow right
+    }
+
+    left: $ain-sidebar-toggle-margin;
 }
 
-.wrapper {
-  height: 100%;
-  width: inherit;
+.ain-wrapper {
+    height: 100%;
+    width: inherit;
 
-  top: $wrapper-media-padding;
-  right: 0;
-  left: $sidebar-expanded-width;
-  position: absolute;
-  transition: left $sidebar-transition-width-duration;
+    top: $wrapper-media-padding;
+    right: 0;
+    left: $ain-sidebar-expanded-width;
+    position: absolute;
+    transition: left $ain-sidebar-transition-width-duration;
 }
 
-.wrapper-expanded {
-   left: $sidebar-toggle-margin !important;
+.ain-wrapper-expanded {
+    left: $ain-sidebar-toggle-margin !important;
 }
 
-.sidebar-collapsed {
-  width: 0;
+.ain-sidebar-collapsed {
+    width: 0;
 
-  .sidebar-item, .sidebar-footer {
-   display: none;
-  }
+    .ain-sidebar-footer,
+    .ain-sidebar-item {
+        display: none;
+    }
 }
 
-.sidebar-item {
- width: 100%;
+.ain-sidebar-item {
+    width: 100%;
 
- display: block;
- margin: 0;
- transition: margin-right $sidebar-transition-width-duration;
+    display: block;
+    margin: 0;
+    transition: margin-right $ain-sidebar-transition-width-duration;
 
- &.sidebar-item-active {
-  background-color: $sidebar-item-active-background-color;
- }
+    &.ain-sidebar-item-active {
+        background-color: $ain-sidebar-item-active-background-color;
+    }
 }
 
-.sidebar-footer {
- width: 100%;
+.ain-sidebar-footer {
+    width: 100%;
 
- bottom: 0;
- left: 0;
- position: absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 
- padding: $base-padding-size;
- display: block;
+    padding: 1em;
+    display: block;
 }
 
-@media (min-width: $base-media-phone-min) {
- .wrapper {
-  left: $sidebar-expanded-width + $wrapper-media-padding;
-  padding-right: $wrapper-media-padding;
- }
+// Media Queries
+@media (min-width: $ain-sidebar-base-media-min) {
+    .ain-wrapper {
+        left: $ain-sidebar-expanded-width + $wrapper-media-padding;
+        padding-right: $wrapper-media-padding;
+    }
 
- .wrapper-expanded {
-  padding-left: 0;
- }
+    .ain-wrapper-expanded {
+        padding-left: 0;
+    }
 }

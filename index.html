@@ -6,27 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All I Need CSS</title>
 
+  <!--  Development -->
+  <!-- <link rel="stylesheet" href="../../../../dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8"> -->
+
+  <!--  Production -->
   <link rel="stylesheet" href="https://elenatorro.github.io/allineed/dist/assets/css/allineed.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
 
   <!--  Sidebar  -->
-  <section id="main-sidebar" class="sidebar">
+  <section id="ain-main-sidebar" class="ain-sidebar">
 
     <!--  Sidebar Items -->
     <nav>
-      <ul class="sidebar-list">
-        <li class="sidebar-item"><a class="navbar-link" href="#">Home</a></li>
-        <li class="sidebar-item"><a class="navbar-link" href="https://elenatorro.github.io/allineed">All I Need</a>
-        </li>
-        <li class="sidebar-item"><a class="navbar-link" href="https://github.com/elenatorro/allineed">Download</a></li>
-        <li class="sidebar-item"><a class="navbar-link" href="https://github.com/elenatorro/allineed/blob/master/README.md">About</a></li>
+      <ul class="ain-sidebar-list">
+        <li class="ain-sidebar-item"><a class="ain-navbar-link" href="#">Home</a></li>
+        <li class="ain-sidebar-item"><a class="ain-navbar-link" href="https://elenatorro.github.io/allineed">All I Need</a></li>
+        <li class="ain-sidebar-item"><a class="ain-navbar-link" href="https://github.com/elenatorro/allineed">Download</a></li>
+        <li class="ain-sidebar-item"><a class="ain-navbar-link" href="https://github.com/elenatorro/allineed/blob/master/README.md">About</a></li>
       </ul>
     </nav>
 
     <!--  Sidebar Footer -->
-    <footer class="sidebar-footer">
+    <footer class="ain-sidebar-footer">
       <p>Based on <a href="http://getskeleton.com/">Skeleton</a></p>
       <p>Copyright All I Need CSS | Made with
         <span class="u-text-danger">&#x2764;</span> by <a href="http://elenatorro.github.io/">Elena Torró.</a>
@@ -35,22 +38,23 @@
 
   </section>
 
-  <a class="sidebar-toggle button-link" id="sidebar-toggle"></a>
+  <a class="ain-sidebar-toggle ain-button-link" id="ain-sidebar-toggle"></a>
 
   <!--  Wrapper -->
-  <section id="main-wrapper" class="container wrapper">
+  <section id="ain-main-wrapper" class="container ain-wrapper">
 
     <!--  Header -->
     <header>
 
       <section class="container u-text-centered">
         <h1>All I need CSS</h1>
-        <h2>CSS simple and minimalist framework</h2>
         <h3>Sidebar Module</h3>
 
+        <h5>This is an independent module that can be used without the entire framework. If you want to know more about All I Need CSS, please visit the <a href="https://elenatorro.github.io/allineed">home page</a>.</h5>
+
         <section class="u-centered">
-          <a type="button" name="button" class="button button-warning" href="https://github.com/elenatorro/allineed-sidebar">Github</a>
-          <a type="button" name="button" class="button button-success" href="https://paypal.me/elenatorro">Donate</a>
+          <a type="button" name="button" class="ain-button-warning" href="https://github.com/elenatorro/allineed-sidebar">Github</a>
+          <a type="button" name="button" class="ain-button-success" href="https://paypal.me/elenatorro">Donate</a>
         </section>
       </section>
 
@@ -61,28 +65,28 @@
       <section class="row">
         <section class="twelve columns">
           <h5> > Code</h5>
-          <pre><code>&lt;!--  Sidebar  --&gt;
-  &lt;section class=&quot;sidebar&quot;&gt;
+          <pre><code class="ain-code">&lt;!--  Sidebar  --&gt;
+  &lt;section class=&quot;ain-sidebar&quot;&gt;
 
     &lt;!--  Sidebar Items --&gt;
     &lt;nav&gt;
-      &lt;ul class=&quot;sidebar-list&quot;&gt;
-        &lt;li class=&quot;sidebar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;sidebar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#link1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;sidebar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#link2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;sidebar-item&quot;&gt;&lt;a class=&quot;navbar-link&quot; href=&quot;#link3&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+      &lt;ul class=&quot;ain-sidebar-list&quot;&gt;
+        &lt;li class=&quot;ain-sidebar-item&quot;&gt;&lt;a class=&quot;ain-navbar-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;ain-sidebar-item&quot;&gt;&lt;a class=&quot;ain-navbar-link&quot; href=&quot;#link1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;ain-sidebar-item&quot;&gt;&lt;a class=&quot;ain-navbar-link&quot; href=&quot;#link2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;ain-sidebar-item&quot;&gt;&lt;a class=&quot;ain-navbar-link&quot; href=&quot;#link3&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/nav&gt;
 
     &lt;!--  Sidebar Footer --&gt;
-    &lt;footer class=&quot;sidebar-footer&quot;&gt;
+    &lt;footer class=&quot;ain-sidebar-footer&quot;&gt;
       &lt;p&gt;This is the footer&lt;/p&gt;
     &lt;/footer&gt;
 
   &lt;/section&gt;
 
   &lt;!--  Wrapper --&gt;
-  &lt;section class=&quot;container wrapper&quot;&gt;
+  &lt;section class=&quot;container ain-wrapper&quot;&gt;
 
     &lt;!--  Your content goes here --&gt;
 
